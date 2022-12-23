@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tom & Jerry</title>
+  <link rel="stylesheet" href="build.css" class="css">
+  <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon">
+  <script src="script.js" type="module"></script>
+</head>
+
+<body class="flex items-center justify-center m-0 w-full h-screen select-none box-border bg-blue-600">
+  <div class="w-full h-screen relative overflow-hidden" data-world>
+    <div class="flex text-black text-3xl font-semibold absolute right-10 top-6 z-50 drop-shadow-xl">
+      <div data-score>Score: 0</div>
+      <div class="pl-1" data-maxscore>| Max: 0</div>
+    </div>
+    <div
+      class="w-full flex items-center justify-center absolute text-white top-1/2 font-semibold text-5xl z-50 drop-shadow-lg"
+      data-start-screen>Press Space To Play</div>
+    <img src="imgs/tom-start.png" class="absolute left-4 z-50 tom" data-tom>
+    <img src="imgs/jerry-start.png" class="absolute h-20 top-[70%] z-50 right-4" data-jerry>
+    <img src="imgs/ground.png" class="w-full h-screen absolute ground" data-ground>
+    <img src="imgs/ground.png" class="w-full h-screen absolute ground" data-ground>
+  </div>
+</body>
+
+</html>
